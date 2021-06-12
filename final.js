@@ -5,6 +5,10 @@ let promise = new Promise(
      setTimeout(() => resolve(2), 1000);
     });
     console.log(promise);//La salida es Promise { 1 } ignora las demas llamadas
+
+
+//ejercicio2///
+
     
     
     
