@@ -15,8 +15,12 @@ function delay(ms) {
   delay(3000).then(() => console.log('runs after 3 seconds'));
 
 //ejercicio 3///
+let promise1= promise.then(f1).catch(f2);
+///este es una cadena primero es el then y luego .cath
 
-    
-    
+
+let promise2=promise.then(f1, f2);
+///aquí no hay un cadena despues del f1
+
     
     
