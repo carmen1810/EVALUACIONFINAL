@@ -147,3 +147,32 @@ async function wait() {
   }
   
   f();
+///ejercicio 7///
+let promise = new Promise(function(resolve, reject) {
+
+    setTimeout(() => (throw new Error("Whoops!")), 1000);
+  });
+ catch(alert)///no se activa el catch, me sale error con el trhow
+    
+ let promise = new Promise(function(resolve, reject) {
+
+  setTimeout(() => reject(new Error("Whoops!")), 1000);
+});
+ catch(alert)//si escribo reject no sale el error
+     
+     
+////ejercicio 8///
+     
+     function printNumbers(from, to) {
+    let current = from;
+  
+    let timerId = setInterval(function() {
+     console.log(current);
+      if (current == to) {
+        clearInterval(timerId);
+      }
+      current++;
+    }, 1000);
+  }
+  
+  printNumbers(1, 20);
