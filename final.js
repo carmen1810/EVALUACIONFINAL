@@ -66,7 +66,7 @@ function loadJson(url) {
     });
 }
 
-// Pide nombres hasta que github devuelve un usuario válido
+
 function demoGithubUser() {
   let name = prompt("Ingrese un nombre:", "iliakan");
 
@@ -107,7 +107,7 @@ async function loadJson(url) {
   }
 }
 
-// Pregunta por un nombre de usuario hasta que github devuelve un usuario válido
+
 async function demoGithubUser() {
 
   let user;
@@ -134,4 +134,16 @@ async function demoGithubUser() {
 }
 
 demoGithubUser();
+    ///ejercicio 6
+async function wait() {
+    await new Promise(resolve => setTimeout(resolve, 1000));
+  
+    return 10;
+  }
+  
+  function f() {
     
+    wait().then(result => console.log(result));
+  }
+  
+  f();
